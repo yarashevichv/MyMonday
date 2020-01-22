@@ -1,0 +1,271 @@
+{
+	"info": {
+		"_postman_id": "1a0309af-0fdc-4663-81e8-7363f92941b8",
+		"name": "temp-collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "tut.by",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6360fe92-96fe-497f-b36a-46ff1a202bc6",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"Белорусский портал TUT.BY. Новости Беларуси и мира\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "tut.by",
+					"host": [
+						"tut",
+						"by"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tut.by",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "60c4794b-f214-4234-984b-0219d3c71d91",
+						"exec": [
+							"pm.test(\"Response time is less than 2000ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(2000);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "tut.by",
+					"host": [
+						"tut",
+						"by"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tut.by",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "8bd7a40d-b62c-4204-a471-aaa690f93f29",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "tut.by",
+					"host": [
+						"tut",
+						"by"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "vk.com",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "1cb6703b-59c2-478d-ad34-296ab3b73315",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"Мабільная версія УКантакце\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "vk.com",
+					"host": [
+						"vk",
+						"com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "vk.com",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "16b92146-8c24-44cb-994b-1becb6460cf5",
+						"exec": [
+							"pm.test(\"Response time is less than 2000ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(2000);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "vk.com",
+					"host": [
+						"vk",
+						"com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "vk.com",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "54ef7c22-17f7-42a4-bd53-8453a6d0997c",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "vk.com",
+					"host": [
+						"vk",
+						"com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "onliner.by",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "cf574d58-ae61-4a9d-9844-09160d02be15",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "onliner.by",
+					"host": [
+						"onliner",
+						"by"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "onliner.by",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "3b448dba-dfef-4c2f-96fa-72befe4ee3b6",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"Onliner\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "onliner.by",
+					"host": [
+						"onliner",
+						"by"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "onliner.by",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "77355f55-da37-4179-9d4b-38c115531380",
+						"exec": [
+							"pm.test(\"Response time is less than 2000ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(2000);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "onliner.by",
+					"host": [
+						"onliner",
+						"by"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
